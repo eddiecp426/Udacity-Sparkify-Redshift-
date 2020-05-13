@@ -18,7 +18,11 @@ The data is in the form of JSON metadata on songs and JSON logs on user activity
 
 ## Table Goals
  
-This star schema contains 1 fact table, songplays, and 4 dimension tables, artists, users, time, and songs.  (Both staging events and staging songs tables are displayed as well)   
+This star schema contains 1 fact table, songplays, and 4 dimension tables, artists, users, time, and songs.  (Both staging events and staging songs tables are displayed as well)  
+
+<p align="center">
+<img src="schema.png" width="700" height="700">
+</p>
  
 ## Repo Files
 
@@ -39,3 +43,5 @@ NOTE:  In order to simulate this project, you will need to launch a cluster on o
  - Then, run etl.py to load staging tables from S3 to Redshift and insert the data into the proper fact and dimension tables. 
  - Lastly, have fun querying!
  
+### Many thanks to [jukkakansanaho](https://github.com/jukkakansanaho) for the star schema image!
+
